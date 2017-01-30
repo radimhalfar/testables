@@ -1,14 +1,14 @@
 //
-//  Car.swift
+//  FastCar.swift
 //  Testables
 //
-//  Created by Radim Halfar on 24.01.17.
+//  Created by Radim Halfar on 30.01.17.
 //  Copyright © 2017 Inloop, s.r.o. All rights reserved.
 //
 
 import Foundation
 
-class Car: Vehicle {
+class FastCar: Vehicle {
     
     fileprivate var _brand: BrandType = .unknown
     
@@ -16,7 +16,7 @@ class Car: Vehicle {
     
     var numberOfWheels: Int { return 4 }
     
-    var maxSpeed: Float { return 240.0 }
+    var maxSpeed: Float { return 344.0 }
     
     var brand: BrandType { return _brand }
     
@@ -26,9 +26,7 @@ class Car: Vehicle {
     }
 }
 
-// MARK: Driveable protocol
-
-extension Car {
+extension FastCar {
     
     var state: DrivingState { return _drivingState }
     

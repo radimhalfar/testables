@@ -10,18 +10,18 @@
 		CE3E46DC1E379CFB00CBD5EF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9E06F31E36471E001B9BEB /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE3E46DD1E379CFB00CBD5EF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9E06F41E36471E001B9BEB /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE3E46E21E37B99700CBD5EF /* VehicleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E46E11E37B99700CBD5EF /* VehicleSpec.swift */; };
-		CE6E330C1E37498C00B03310 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330B1E37498C00B03310 /* Vehicle.swift */; };
-		CE6E330F1E3749C700B03310 /* Driveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330E1E3749C700B03310 /* Driveable.swift */; };
-		CE6E33111E374AAF00B03310 /* BrandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33101E374AAF00B03310 /* BrandType.swift */; };
-		CE6E33141E374B7500B03310 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33131E374B7500B03310 /* Car.swift */; };
 		CE9E06D31E36445F001B9BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E06D21E36445F001B9BEB /* AppDelegate.swift */; };
 		CE9E06D51E36445F001B9BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E06D41E36445F001B9BEB /* ViewController.swift */; };
 		CE9E06D81E36445F001B9BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E06D61E36445F001B9BEB /* Main.storyboard */; };
 		CE9E06DA1E36445F001B9BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9E06D91E36445F001B9BEB /* Assets.xcassets */; };
 		CE9E06DD1E36445F001B9BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E06DB1E36445F001B9BEB /* LaunchScreen.storyboard */; };
-		CE9E06E81E36445F001B9BEB /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E06E71E36445F001B9BEB /* VehicleTests.swift */; };
 		CE9E06F51E36471E001B9BEB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E06F31E36471E001B9BEB /* Quick.framework */; };
 		CE9E06F61E36471E001B9BEB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E06F41E36471E001B9BEB /* Nimble.framework */; };
+		CEF846071E3F71EC0039301D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330B1E37498C00B03310 /* Vehicle.swift */; };
+		CEF846081E3F71EC0039301D /* Driveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330E1E3749C700B03310 /* Driveable.swift */; };
+		CEF846091E3F71EC0039301D /* BrandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33101E374AAF00B03310 /* BrandType.swift */; };
+		CEF8460A1E3F72620039301D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33131E374B7500B03310 /* Car.swift */; };
+		CEF8460C1E3F728A0039301D /* FastCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8460B1E3F728A0039301D /* FastCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +62,10 @@
 		CE9E06DC1E36445F001B9BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9E06DE1E36445F001B9BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9E06E31E36445F001B9BEB /* TestablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9E06E71E36445F001B9BEB /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
 		CE9E06E91E36445F001B9BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9E06F31E36471E001B9BEB /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		CE9E06F41E36471E001B9BEB /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		CEF8460B1E3F728A0039301D /* FastCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastCar.swift; path = PossibleVehicles/FastCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,6 @@
 		CE3E46E01E37B97800CBD5EF /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9E06E71E36445F001B9BEB /* VehicleTests.swift */,
 				CE3E46E11E37B99700CBD5EF /* VehicleSpec.swift */,
 			);
 			name = ExampleTests;
@@ -112,6 +111,7 @@
 			children = (
 				CE6E330D1E3749B300B03310 /* Vehicle */,
 				CE6E33131E374B7500B03310 /* Car.swift */,
+				CEF8460B1E3F728A0039301D /* FastCar.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -271,11 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6E330F1E3749C700B03310 /* Driveable.swift in Sources */,
-				CE6E330C1E37498C00B03310 /* Vehicle.swift in Sources */,
-				CE6E33141E374B7500B03310 /* Car.swift in Sources */,
+				CEF846081E3F71EC0039301D /* Driveable.swift in Sources */,
+				CEF8460C1E3F728A0039301D /* FastCar.swift in Sources */,
+				CEF846071E3F71EC0039301D /* Vehicle.swift in Sources */,
+				CEF8460A1E3F72620039301D /* Car.swift in Sources */,
 				CE9E06D51E36445F001B9BEB /* ViewController.swift in Sources */,
-				CE6E33111E374AAF00B03310 /* BrandType.swift in Sources */,
+				CEF846091E3F71EC0039301D /* BrandType.swift in Sources */,
 				CE9E06D31E36445F001B9BEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9E06E81E36445F001B9BEB /* VehicleTests.swift in Sources */,
 				CE3E46E21E37B99700CBD5EF /* VehicleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
