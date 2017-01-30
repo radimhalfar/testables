@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE3E46DC1E379CFB00CBD5EF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9E06F31E36471E001B9BEB /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE3E46DD1E379CFB00CBD5EF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE9E06F41E36471E001B9BEB /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE3E46E21E37B99700CBD5EF /* VehicleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E46E11E37B99700CBD5EF /* VehicleSpec.swift */; };
 		CE9E06D31E36445F001B9BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E06D21E36445F001B9BEB /* AppDelegate.swift */; };
 		CE9E06D51E36445F001B9BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E06D41E36445F001B9BEB /* ViewController.swift */; };
 		CE9E06D81E36445F001B9BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E06D61E36445F001B9BEB /* Main.storyboard */; };
@@ -17,11 +16,8 @@
 		CE9E06DD1E36445F001B9BEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9E06DB1E36445F001B9BEB /* LaunchScreen.storyboard */; };
 		CE9E06F51E36471E001B9BEB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E06F31E36471E001B9BEB /* Quick.framework */; };
 		CE9E06F61E36471E001B9BEB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E06F41E36471E001B9BEB /* Nimble.framework */; };
-		CEF846071E3F71EC0039301D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330B1E37498C00B03310 /* Vehicle.swift */; };
-		CEF846081E3F71EC0039301D /* Driveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E330E1E3749C700B03310 /* Driveable.swift */; };
-		CEF846091E3F71EC0039301D /* BrandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33101E374AAF00B03310 /* BrandType.swift */; };
-		CEF8460A1E3F72620039301D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E33131E374B7500B03310 /* Car.swift */; };
-		CEF8460C1E3F728A0039301D /* FastCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8460B1E3F728A0039301D /* FastCar.swift */; };
+		CEF8460E1E3F7CFB0039301D /* VehicleSpecII.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8460D1E3F7CFB0039301D /* VehicleSpecII.swift */; };
+		CEF846101E3F7D310039301D /* Representation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF8460F1E3F7D310039301D /* Representation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +62,8 @@
 		CE9E06F31E36471E001B9BEB /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		CE9E06F41E36471E001B9BEB /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		CEF8460B1E3F728A0039301D /* FastCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FastCar.swift; path = PossibleVehicles/FastCar.swift; sourceTree = "<group>"; };
+		CEF8460D1E3F7CFB0039301D /* VehicleSpecII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleSpecII.swift; sourceTree = "<group>"; };
+		CEF8460F1E3F7D310039301D /* Representation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Representation.swift; path = ExampleRepresentation/Representation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +135,7 @@
 		CE9E06D11E36445F001B9BEB /* Testables */ = {
 			isa = PBXGroup;
 			children = (
+				CEF846111E3F7D4C0039301D /* ExampleRepresentation */,
 				CE6E33121E374B5B00B03310 /* Model */,
 				CE9E06D21E36445F001B9BEB /* AppDelegate.swift */,
 				CE9E06D41E36445F001B9BEB /* ViewController.swift */,
@@ -154,6 +153,7 @@
 				CE3E46E01E37B97800CBD5EF /* ExampleTests */,
 				CE9E06F21E364705001B9BEB /* Dependencies */,
 				CE9E06E91E36445F001B9BEB /* Info.plist */,
+				CEF8460D1E3F7CFB0039301D /* VehicleSpecII.swift */,
 			);
 			path = TestablesTests;
 			sourceTree = "<group>";
@@ -165,6 +165,14 @@
 				CE9E06F41E36471E001B9BEB /* Nimble.framework */,
 			);
 			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		CEF846111E3F7D4C0039301D /* ExampleRepresentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEF8460F1E3F7D310039301D /* Representation.swift */,
+			);
+			name = ExampleRepresentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +230,7 @@
 					};
 					CE9E06E21E36445F001B9BEB = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE9E06CE1E36445E001B9BEB;
 					};
@@ -271,12 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF846081E3F71EC0039301D /* Driveable.swift in Sources */,
-				CEF8460C1E3F728A0039301D /* FastCar.swift in Sources */,
-				CEF846071E3F71EC0039301D /* Vehicle.swift in Sources */,
-				CEF8460A1E3F72620039301D /* Car.swift in Sources */,
+				CEF846101E3F7D310039301D /* Representation.swift in Sources */,
 				CE9E06D51E36445F001B9BEB /* ViewController.swift in Sources */,
-				CEF846091E3F71EC0039301D /* BrandType.swift in Sources */,
 				CE9E06D31E36445F001B9BEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E46E21E37B99700CBD5EF /* VehicleSpec.swift in Sources */,
+				CEF8460E1E3F7CFB0039301D /* VehicleSpecII.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +448,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestablesTests",
@@ -451,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.inloop.TestablesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Testables.app/Testables";
 			};
@@ -461,6 +468,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestablesTests",
